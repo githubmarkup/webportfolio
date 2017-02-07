@@ -1,0 +1,586 @@
+@import url("https://fonts.googleapis.com/css?family=Istok+Web:400,700");
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.ellipsis {
+  white-space: nowrap;
+  /* 1 */
+  text-overflow: ellipsis;
+  /* 2 */
+  overflow: hidden; }
+
+#wrapper {
+  font-family: "Istok Web", "Roboto", Helvetica, sans-serif;
+  color: #4b3f55;
+  background: #fff;
+  /*-----------------/header------------------*/
+  /*------------------main--------------------*/
+  /*------------------/main--------------------*/
+  /*------------------footer--------------------*/
+  /*------------------/footer--------------------*/ }
+  #wrapper #header .navigation {
+    background: #775ba3;
+    opacity: 0.6; }
+    @media (max-width: 991px) and (min-width: 768px) {
+      #wrapper #header .navigation .logo {
+        padding: 10px 0; } }
+    @media (max-width: 479px) {
+      #wrapper #header .navigation .logo {
+        padding: 8px 0; } }
+    #wrapper #header .navigation .logo img {
+      max-width: 100%;
+      height: auto; }
+    @media (max-width: 767px) {
+      #wrapper #header .navigation .navbar-default .navbar-nav li:hover {
+        background: #383838; } }
+    @media (max-width: 1199px) and (min-width: 992px) {
+      #wrapper #header .navigation .navbar-default .navbar-nav li {
+        padding: 0 10px; } }
+    @media (max-width: 991px) and (min-width: 768px) {
+      #wrapper #header .navigation .navbar-default .navbar-nav li {
+        padding: 0 7px; } }
+    #wrapper #header .navigation .navbar-default .navbar-nav li a {
+      font-family: "Istok Web", "Roboto", Helvetica, sans-serif;
+      font-size: 14px;
+      text-shadow: 1px 1px 1px #876885;
+      border-bottom: 3px solid transparent;
+      -webkit-transition: 0.3s;
+              transition: 0.3s; }
+      @media (max-width: 767px) {
+        #wrapper #header .navigation .navbar-default .navbar-nav li a {
+          padding: 10px 0 10px 5px;
+          border-bottom: 0; } }
+      @media (max-width: 479px) {
+        #wrapper #header .navigation .navbar-default .navbar-nav li a {
+          font-size: 12px; } }
+      #wrapper #header .navigation .navbar-default .navbar-nav li a.active, #wrapper #header .navigation .navbar-default .navbar-nav li a:hover {
+        border-bottom: 3px solid #f8e1b4;
+        padding: 25px 0 25px 0;
+        color: #eee;
+        text-shadow: 0px 0px 3px #fff; }
+        @media (max-width: 767px) {
+          #wrapper #header .navigation .navbar-default .navbar-nav li a.active, #wrapper #header .navigation .navbar-default .navbar-nav li a:hover {
+            padding: 10px 0 10px 10px;
+            border-bottom: 0px; } }
+    #wrapper #header .navigation .login {
+      text-align: right; }
+      #wrapper #header .navigation .login a {
+        margin-right: 30px; }
+        @media (max-width: 767px) and (min-width: 480px) {
+          #wrapper #header .navigation .login a {
+            margin-right: 15px; } }
+        @media (max-width: 479px) {
+          #wrapper #header .navigation .login a {
+            margin-right: 5px; } }
+        #wrapper #header .navigation .login a:last-child {
+          margin-right: 0px; }
+        #wrapper #header .navigation .login a .glyphicon {
+          margin-right: 0px; }
+          @media (max-width: 480px) {
+            #wrapper #header .navigation .login a .glyphicon {
+              font-size: 16px; } }
+  #wrapper .main {
+    /*------------/block----------------*/
+    /*------------/tools----------------*/
+    /*------------/fotos----------------*/
+    /*----------------/features----------------*/
+    /*----------------/reviews----------------*/ }
+    #wrapper .main .block {
+      padding: 100px 0;
+      text-align: center; }
+      @media (max-width: 767px) {
+        #wrapper .main .block {
+          padding: 50px 10px; } }
+      #wrapper .main .block h2 {
+        margin-bottom: 25px;
+        font-family: 'Istok', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        color: #775ba3; }
+        @media (max-width: 480px) {
+          #wrapper .main .block h2 {
+            font-size: 28px; } }
+      #wrapper .main .block p {
+        font-family: 'Istok', sans-serif;
+        font-size: 23px;
+        line-height: 36px;
+        font-weight: bold;
+        color: #4b3f55; }
+        @media (max-width: 480px) {
+          #wrapper .main .block p {
+            font-size: 20px;
+            line-height: 34px; } }
+    #wrapper .main .line {
+      height: 1px;
+      background: #91c5a9; }
+    #wrapper .main .tools {
+      padding: 80px 0 90px;
+      text-align: center; }
+      @media (max-width: 767px) {
+        #wrapper .main .tools {
+          padding: 40px 10px 45px; } }
+      #wrapper .main .tools h2 {
+        padding-bottom: 50px;
+        font-family: 'Istok', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        color: #775ba3; }
+        @media (max-width: 480px) {
+          #wrapper .main .tools h2 {
+            font-size: 28px; } }
+      #wrapper .main .tools .img-wrap1,
+      #wrapper .main .tools .img-wrap2 {
+        position: relative; }
+        #wrapper .main .tools .img-wrap1:after,
+        #wrapper .main .tools .img-wrap2:after {
+          content: '';
+          position: absolute;
+          top: 50px;
+          right: -167px;
+          width: 296px;
+          height: 3px;
+          background-image: url(../images/line.png); }
+          @media (max-width: 1199px) and (min-width: 992px) {
+            #wrapper .main .tools .img-wrap1:after,
+            #wrapper .main .tools .img-wrap2:after {
+              content: '';
+              position: absolute;
+              top: 50px;
+              right: -128px;
+              width: 227px;
+              height: 3px;
+              background-image: url(../images/line.png); } }
+          @media (max-width: 991px) {
+            #wrapper .main .tools .img-wrap1:after,
+            #wrapper .main .tools .img-wrap2:after {
+              height: 0px; } }
+        #wrapper .main .tools .img-wrap1 img,
+        #wrapper .main .tools .img-wrap2 img {
+          max-width: 100%;
+          height: auto;
+          z-index: 10; }
+        #wrapper .main .tools .img-wrap1 p,
+        #wrapper .main .tools .img-wrap2 p {
+          padding-top: 50px;
+          font-family: 'Istok', sans-serif;
+          font-size: 13px;
+          line-height: 22px;
+          font-weight: bold;
+          color: #4b3f55; }
+          @media (max-width: 991px) {
+            #wrapper .main .tools .img-wrap1 p,
+            #wrapper .main .tools .img-wrap2 p {
+              padding-top: 20px;
+              margin-bottom: 20px; } }
+          #wrapper .main .tools .img-wrap1 p span,
+          #wrapper .main .tools .img-wrap2 p span {
+            font-family: 'Istok', sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            color: #91c5a9; }
+      #wrapper .main .tools .img-wrap3 img {
+        max-width: 100%;
+        height: auto;
+        z-index: 10; }
+      #wrapper .main .tools .img-wrap3 p {
+        padding-top: 50px;
+        font-family: 'Istok', sans-serif;
+        font-size: 13px;
+        line-height: 22px;
+        font-weight: bold;
+        color: #4b3f55; }
+        @media (max-width: 991px) {
+          #wrapper .main .tools .img-wrap3 p {
+            padding-top: 20px;
+            margin-bottom: 20px; } }
+        #wrapper .main .tools .img-wrap3 p span {
+          font-family: 'Istok', sans-serif;
+          font-size: 30px;
+          font-weight: bold;
+          color: #91c5a9; }
+    #wrapper .main #fotos {
+      padding: 85px 0 85px; }
+      @media (max-width: 767px) {
+        #wrapper .main #fotos {
+          padding: 50px 0; } }
+      #wrapper .main #fotos h2 {
+        padding-bottom: 30px;
+        font-family: 'Istok', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        color: #775ba3;
+        text-align: center; }
+        @media (max-width: 480px) {
+          #wrapper .main #fotos h2 {
+            font-size: 28px; } }
+      #wrapper .main #fotos .img-wrap {
+        overflow: hidden;
+        margin-bottom: 25px; }
+        #wrapper .main #fotos .img-wrap .img-fotos {
+          text-align: center; }
+          #wrapper .main #fotos .img-wrap .img-fotos img {
+            max-width: 100%;
+            height: auto; }
+          #wrapper .main #fotos .img-wrap .img-fotos p {
+            padding: 10px 0;
+            margin: 0 auto;
+            max-width: 358px;
+            font-family: 'Times New Roman', sans-serif;
+            font-size: 15px;
+            color: #91c5a9;
+            border-top: 2px solid #91c5a9;
+            border-bottom: 2px solid #91c5a9;
+            text-transform: uppercase; }
+            #wrapper .main #fotos .img-wrap .img-fotos p span {
+              font-family: 'Times New Roman', sans-serif;
+              font-size: 11px;
+              color: #91c5a9; }
+          #wrapper .main #fotos .img-wrap .img-fotos p.desc {
+            font-family: "Istok Web", "Roboto", Helvetica, sans-serif;
+            font-size: 14px;
+            color: #4b3f55;
+            text-transform: inherit;
+            border-top: 0;
+            border-bottom: 0; }
+            @media (max-width: 480px) {
+              #wrapper .main #fotos .img-wrap .img-fotos p.desc {
+                padding: 10px; } }
+        #wrapper .main #fotos .img-wrap a {
+          float: left;
+          padding: 10px 30px;
+          width: 50%;
+          background: #3b5998;
+          border-radius: 0px;
+          border: none;
+          color: #fff; }
+          #wrapper .main #fotos .img-wrap a.facebook {
+            background: #3b5998; }
+          #wrapper .main #fotos .img-wrap a.google {
+            background: #d14333; }
+          #wrapper .main #fotos .img-wrap a.pinterest {
+            background: #ea4c88; }
+          #wrapper .main #fotos .img-wrap a.twitter {
+            background: #00aced; }
+          #wrapper .main #fotos .img-wrap a.youtube {
+            background: #c70c0c; }
+    #wrapper .main #features {
+      padding: 80px 0 30px;
+      background: #775ba3; }
+      @media (max-width: 767px) {
+        #wrapper .main #features {
+          padding: 50px 0; } }
+      #wrapper .main #features img {
+        margin-bottom: 50px;
+        max-width: 100%;
+        height: auto; }
+        @media (max-width: 767px) {
+          #wrapper .main #features img {
+            margin-bottom: 25px; } }
+      #wrapper .main #features h2 {
+        padding-bottom: 70px;
+        font-family: 'Istok', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase; }
+        @media (max-width: 767px) {
+          #wrapper .main #features h2 {
+            padding-bottom: 20px; } }
+        @media (max-width: 480px) {
+          #wrapper .main #features h2 {
+            font-size: 28px; } }
+      #wrapper .main #features .text-features {
+        padding-left: 20px;
+        margin-bottom: 50px; }
+        @media (max-width: 767px) {
+          #wrapper .main #features .text-features {
+            margin-bottom: 25px; } }
+        #wrapper .main #features .text-features h3 {
+          margin-bottom: 20px;
+          font-family: 'Istok', serif;
+          font-size: 35px;
+          line-height: 47px;
+          color: #fff; }
+        #wrapper .main #features .text-features p {
+          font-family: 'Istok', serif;
+          font-size: 14px;
+          line-height: 21px;
+          color: #fff; }
+        #wrapper .main #features .text-features button {
+          margin-top: 40px;
+          padding: 10px 58px;
+          font-family: 'Istok', serif;
+          font-size: 18px;
+          font-weight: bold;
+          color: #fff;
+          border: 5px solid #fff;
+          background: transparent;
+          -webkit-transition: 0.3s;
+                  transition: 0.3s; }
+          #wrapper .main #features .text-features button:hover {
+            background: #eee;
+            color: #775ba3;
+            border-color: #eee; }
+    #wrapper .main #reviews {
+      padding: 100px 0; }
+      @media (max-width: 767px) {
+        #wrapper .main #reviews {
+          padding: 50px 0; } }
+      #wrapper .main #reviews h2 {
+        padding-bottom: 70px;
+        font-family: 'Istok', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        color: #7e63a7;
+        text-align: center;
+        text-transform: uppercase; }
+        #wrapper .main #reviews h2 i {
+          color: #ff1717; }
+        @media (max-width: 767px) {
+          #wrapper .main #reviews h2 {
+            padding-bottom: 20px; } }
+        @media (max-width: 480px) {
+          #wrapper .main #reviews h2 {
+            font-size: 26px; } }
+      @media (min-width: 768px) {
+        #wrapper .main #reviews #carousel-reviews .carousel-indicators {
+          bottom: -20px; } }
+      @media (max-width: 399px) and (min-width: 320px) {
+        #wrapper .main #reviews #carousel-reviews .carousel-indicators {
+          bottom: -15px; } }
+      @media (max-width: 599px) and (min-width: 480px) {
+        #wrapper .main #reviews #carousel-reviews .carousel-indicators {
+          bottom: -5px; } }
+      #wrapper .main #reviews #carousel-reviews .carousel-indicators .active {
+        background: #91c5a9; }
+      #wrapper .main #reviews #carousel-reviews .carousel-indicators li {
+        border: 1px solid #91c5a9; }
+      #wrapper .main #reviews .item img {
+        max-width: 100%;
+        height: auto; }
+        @media (max-width: 479px) {
+          #wrapper .main #reviews .item img {
+            max-width: 33%;
+            margin: 15px 0 15px 5px; } }
+      @media (max-width: 1199px) and (min-width: 992px) {
+        #wrapper .main #reviews .item .carousel-caption {
+          right: 8%; } }
+      @media (max-width: 991px) and (min-width: 768px) {
+        #wrapper .main #reviews .item .carousel-caption {
+          left: 29%;
+          right: 5%; } }
+      @media (max-width: 767px) and (min-width: 600px) {
+        #wrapper .main #reviews .item .carousel-caption {
+          left: 33%;
+          right: 5%;
+          bottom: 45px; } }
+      @media (max-width: 599px) and (min-width: 480px) {
+        #wrapper .main #reviews .item .carousel-caption {
+          left: 45%;
+          right: 5%;
+          bottom: 26px; } }
+      @media (max-width: 479px) and (min-width: 400px) {
+        #wrapper .main #reviews .item .carousel-caption {
+          left: 35%;
+          right: 3%;
+          bottom: 20px; } }
+      @media (max-width: 399px) and (min-width: 320px) {
+        #wrapper .main #reviews .item .carousel-caption {
+          left: 36%;
+          right: 3%;
+          bottom: -11px; } }
+      #wrapper .main #reviews .item .carousel-caption:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 25px;
+        height: 20px;
+        background: url(../images/quotes-left.png) no-repeat; }
+      #wrapper .main #reviews .item .carousel-caption:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 25px;
+        height: 20px;
+        background: url(../images/quotes-right.png) no-repeat; }
+      #wrapper .main #reviews .item .carousel-caption p {
+        font-family: 'Istok', sans-serif;
+        font-size: 24px;
+        line-height: 36px;
+        color: #4b3f55; }
+        @media (max-width: 991px) and (min-width: 768px) {
+          #wrapper .main #reviews .item .carousel-caption p {
+            font-size: 19px;
+            line-height: 24px; } }
+        @media (max-width: 767px) and (min-width: 600px) {
+          #wrapper .main #reviews .item .carousel-caption p {
+            font-size: 17px;
+            line-height: 24px; } }
+        @media (max-width: 599px) and (min-width: 480px) {
+          #wrapper .main #reviews .item .carousel-caption p {
+            font-size: 14px;
+            line-height: 22px; } }
+        @media (max-width: 479px) and (min-width: 320px) {
+          #wrapper .main #reviews .item .carousel-caption p {
+            font-size: 12px;
+            line-height: 12px; } }
+        #wrapper .main #reviews .item .carousel-caption p.quote {
+          font-family: 'Istok', sans-serif;
+          font-size: 16px;
+          line-height: 16px;
+          font-style: italic;
+          color: #7e63a8;
+          text-transform: uppercase;
+          text-align: right; }
+          @media (max-width: 991px) and (min-width: 768px) {
+            #wrapper .main #reviews .item .carousel-caption p.quote {
+              font-size: 14px;
+              line-height: 14px; } }
+          @media (max-width: 767px) and (min-width: 320px) {
+            #wrapper .main #reviews .item .carousel-caption p.quote {
+              font-size: 12px;
+              line-height: 12px; } }
+    #wrapper .main #portfolio {
+      padding: 75px 0 70px; }
+      #wrapper .main #portfolio h2 {
+        font-family: 'Istok', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        color: #7e63a7;
+        text-align: center;
+        text-transform: uppercase; }
+        @media (max-width: 767px) {
+          #wrapper .main #portfolio h2 {
+            padding-bottom: 20px; } }
+        @media (max-width: 480px) {
+          #wrapper .main #portfolio h2 {
+            font-size: 26px; } }
+      #wrapper .main #portfolio ul.nav-tabs {
+        margin: 40px auto;
+        text-align: center; }
+        #wrapper .main #portfolio ul.nav-tabs li {
+          float: none;
+          display: inline-block; }
+          #wrapper .main #portfolio ul.nav-tabs li.active {
+            border: 2px solid transparent;
+            border-bottom: 2px solid;
+            border-bottom-color: #91c5a9; }
+            #wrapper .main #portfolio ul.nav-tabs li.active a {
+              background-color: transparent;
+              border: none;
+              border-bottom-color: #91c5a9;
+              cursor: pointer; }
+              #wrapper .main #portfolio ul.nav-tabs li.active a:hover {
+                border-bottom: none; }
+          #wrapper .main #portfolio ul.nav-tabs li a {
+            border: 2px solid transparent;
+            font-family: 'Istok', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: #7e63a8;
+            text-transform: uppercase;
+            border-radius: 0px; }
+            #wrapper .main #portfolio ul.nav-tabs li a:hover {
+              border-color: transparent;
+              border-bottom: 2px solid #91c5a9;
+              background: transparent;
+              border-radius: 0px;
+              box-sizing: border-box; }
+      #wrapper .main #portfolio .tab-content .img-portfolio img {
+        margin-bottom: 30px;
+        max-width: 100%;
+        height: auto; }
+        @media (max-width: 767px) {
+          #wrapper .main #portfolio .tab-content .img-portfolio img {
+            display: block;
+            width: 290px;
+            height: auto;
+            margin: 0 auto 30px; } }
+  #wrapper #footer .footer-top {
+    padding: 60px 0 35px;
+    background: #91c5a9; }
+    @media (max-width: 768px) {
+      #wrapper #footer .footer-top {
+        padding: 50px 0 35px; } }
+    @media (max-width: 1999px) {
+      #wrapper #footer .footer-top .snippet,
+      #wrapper #footer .footer-top .contact {
+        margin-bottom: 25px;
+        text-align: center; } }
+    #wrapper #footer .footer-top .contact a {
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 10px;
+      margin-right: 10px;
+      padding: 10px 14px;
+      font-family: 'Istok', sans-serif;
+      font-size: 12px;
+      font-weight: normal;
+      color: #fff;
+      background: #419568; }
+    @media (max-width: 992px) {
+      #wrapper #footer .footer-top form {
+        margin-bottom: 25px; } }
+    #wrapper #footer .footer-top h4 {
+      margin-bottom: 15px;
+      font-family: 'Istok', sans-serif;
+      font-size: 23px;
+      font-weight: bold;
+      color: #fff;
+      text-align: center; }
+    #wrapper #footer .footer-top p {
+      font-family: 'Istok', sans-serif;
+      font-size: 13px;
+      color: #fff; }
+    #wrapper #footer .footer-top form label {
+      font-family: 'Istok', sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      color: #fff; }
+    #wrapper #footer .footer-top form textarea {
+      resize: none;
+      width: 100%; }
+    #wrapper #footer .footer-top .twitter {
+      text-align: center; }
+      #wrapper #footer .footer-top .twitter a {
+        color: #fff;
+        text-decoration: none; }
+        #wrapper #footer .footer-top .twitter a:hover {
+          text-decoration: underline; }
+  #wrapper #footer .footer-bottom {
+    padding: 25px 0 15px;
+    background: #54865d; }
+    @media (max-width: 1999px) {
+      #wrapper #footer .footer-bottom {
+        text-align: center; } }
+    #wrapper #footer .footer-bottom p {
+      font-family: 'Istok', sans-serif;
+      font-size: 14px;
+      color: #fff; }
+      #wrapper #footer .footer-bottom p a {
+        font-family: 'Istok', sans-serif;
+        font-size: 14px;
+        color: #fff; }
+    #wrapper #footer .footer-bottom .footer-menu ul {
+      padding: 0;
+      margin: 0;
+      margin-right: 0;
+      text-align: center; }
+      #wrapper #footer .footer-bottom .footer-menu ul li {
+        list-style: none;
+        display: inline-block; }
+        #wrapper #footer .footer-bottom .footer-menu ul li a {
+          padding: 0 10px;
+          font-family: 'Istok', sans-serif;
+          font-size: 14px;
+          font-weight: bold;
+          color: #fff;
+          text-decoration: none; }
+
+/*------------------/wrapper--------------------*/
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Title</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" defer></script>
+  <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/jquery.main.js" defer></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('a[href*=#]').bind("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+        scrollTop: $(anchor.attr('href')).offset().top
+        }, 1000);
+        e.preventDefault();
+        });
+        return false;
+    });
+</script>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div class="navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="logo">
+                                <a href="#"><img src="images/logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-3 col-sm-push-7">
+                            <div class="login">
+                                <a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+                                <a href="#"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                                <a href="#"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-7 col-sm-pull-3">
+                            <nav class="navbar navbar-default">
+                                <div class="container-fluid">
+                                    
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav">
+                                            <li class="active"><a href="#header">home<span class="sr-only">(current)</span></a></li>
+                                            <li><a href="#portfolio">portfolios</a></li>
+                                            <li><a href="#fotos">blog</a></li>
+                                            <li><a href="#footer">contact</a></li>
+                                            <li><a href="#features">shop</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-slider" data-slide-to="1"></li>
+                    <li data-target="#carousel-slider" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/slider.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="images/slider.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="images/slider.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+        <div class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="block">
+                        <h2>La Liberté guidant le peuple</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente libero, obcaecati laudantium, minima aliquid laborum eveniet quod labore, odio explicabo temporibus sunt dolores a nesciunt in harum dignissimos? Sed, unde.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="tools">
+                <div class="container">
+                    <div class="row">
+                        <h2>Postérité de l'œuvre</h2>
+                        <div class="col-md-4">
+                            <div class="img-wrap1">
+                                <img src="images/img-tools1.png" alt="">
+                                <p><span>1.</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ex itaque eos atque. Recusandae quod iusto porro, doloribus dicta nisi.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="img-wrap2">
+                                <img src="images/img-tools2.png" alt="">
+                                <p><span>2.</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ex itaque eos atque. Recusandae quod iusto porro, doloribus dicta nisi.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="img-wrap3">
+                                <img src="images/img-tools3.png" alt="">
+                                <p><span>3.</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ex itaque eos atque. Recusandae quod iusto porro, doloribus dicta nisi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /tools -->
+            <div class="line"></div>
+            <div id="fotos">
+                <div class="container">
+                    <div class="row">
+                    <h2>Postérité de l'œuvre</h2>
+                        <div class="col-md-4">
+                            <div class="img-wrap">
+                                <div class="img-fotos">
+                                    <img src="images/img-fotos1.jpg" alt="">
+                                    <p>Craig Garner<span> ceo</span></p>
+                                    <p class="desc">Amazone blessée du type de Sôsiklès. Copie romaine d'après un oblessée du type du type de Sôsiklès.</p>
+                                </div>
+                                <a class="btn btn-default facebook" href="https://www.facebook.com/" role="button"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                                <a class="btn btn-default google" href="https://plus.google.com" role="button"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="img-wrap">
+                                <div class="img-fotos">
+                                    <img src="images/img-fotos2.jpg" alt="">
+                                    <p>Craig Garner<span> ceo</span></p>
+                                    <p class="desc">Amazone blessée du type de Sôsiklès. Copie romaine d'après un oblessée du type du type de Sôsiklès.</p>
+                                </div>
+                                <a class="btn btn-default facebook" href="https://www.facebook.com/" role="button"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                                <a class="btn btn-default pinterest" href="https://www.pinterest.com/" role="button"><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="img-wrap">
+                                <div class="img-fotos">
+                                    <img src="images/img-fotos3.jpg" alt="">
+                                    <p>Craig Garner<span> ceo</span></p>
+                                    <p class="desc">Amazone blessée du type de Sôsiklès. Copie romaine d'après un oblessée du type du type de Sôsiklès.</p>
+                                </div>
+                                <a class="btn btn-default twitter" href="https://twitter.com/" role="button"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                                <a class="btn btn-default youtube" href="https://www.youtube.com/" role="button"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /fotos -->
+            <div id="features">
+                <div class="container">
+                    <h2>Our features</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="text-features">
+                                <h3>Visual Composer<br> Page Builder</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum veritatis dolore accusamus fugiat, exercitationem, deleniti at recusandae, maiores minus explicabo, voluptatibus velit assumenda distinctio veniam.</p>
+                                <button type="button">Lire plus</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="images/img-features.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/img-features1.png" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-features">
+                                <h3>Customize &  Live Preview</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum veritatis dolore accusamus fugiat, exercitationem, deleniti at recusandae, maiores minus explicabo, voluptatibus velit assumenda distinctio veniam.</p>
+                                <button type="button">Lire plus</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /features -->
+            <div id="reviews">
+                <div class="container">
+                <h2>What's the B<i class="fa fa-heart" aria-hidden="true"></i>zz?</h2>
+                    <div class="row">
+                        <div id="carousel-reviews" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-reviews" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-reviews" data-slide-to="1"></li>
+                                <li data-target="#carousel-reviews" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="images/img-slider.png" alt="...">
+                                    <div class="carousel-caption">
+                                        <p>What’s our clients talking about our product or service. This is only an example to show you quote block effect here.</p>
+                                        <p class="quote">Georg Clooney</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="images/img-slider.png" alt="...">
+                                    <div class="carousel-caption">
+                                        <p>What’s our clients talking about our product or service. This is only an example to show you quote block effect here.</p>
+                                        <p class="quote">Georg Clooney</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="images/img-slider.png" alt="...">
+                                    <div class="carousel-caption">
+                                        <p>What’s our clients talking about our product or service. This is only an example to show you quote block effect here.</p>
+                                        <p class="quote">Georg Clooney</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /reviews -->
+            <div class="line"></div>
+            <div id="portfolio">
+                <div class="container">
+                <h2>Portfolio</h2>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                    <li class="active"><a href="#all" data-toggle="tab">All</a></li>
+                        <li><a href="#show" data-toggle="tab">Show</a></li>
+                        <li><a href="#web" data-toggle="tab">Web</a></li>
+                        <li><a href="#print" data-toggle="tab">Print</a></li>
+                        <li><a href="#branding" data-toggle="tab">Branding</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="all">
+                            <div class="row">
+                                <div class="img-portfolio">
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port1.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port2.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port3.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port4.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port5.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port6.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port7.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port8.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="show">
+                            <div class="row">
+                                <div class="img-portfolio">
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port1.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port2.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port3.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port4.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="web">
+                            <div class="row">
+                                <div class="img-portfolio">
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port2.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port3.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port4.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port5.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="print">
+                            <div class="row">
+                                <div class="img-portfolio">
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port3.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port4.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port5.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port6.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="branding">
+                            <div class="row">
+                                <div class="img-portfolio">
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port5.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port6.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port7.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <img src="images/img-port8.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /portfolio -->
+        </div>
+        <!-- /main -->
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="snippet">
+                                <h4>Snippet</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque fuga similique dolor, ut veritatis ad ipsum aperiam fugit incidunt, quisquam.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="contact">
+                                <h4>Tags</h4>
+                                <a href="">Responsive</a>
+                                <a href="">Flat</a>
+                                <a href="">Template</a>
+                                <a href="">Design</a>
+                                <a href="">Design</a>
+                                <a href="">Creative</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                        <h4>Contact</h4>
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="name" class="col-sm-3 control-label">Name:</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="name" placeholder="Email" required="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="col-sm-3 control-label">Email:</label>
+                                    <div class="col-sm-9">
+                                        <input type="email" class="form-control" id="email" placeholder="Password" required="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message" class="col-sm-3 control-label">Message:</label>
+                                    <div class="col-sm-9">
+                                        <textarea class="form-control" id="message" rows="3" placeholder="Text"></textarea>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="twitter">
+                                <h4>Twitter</h4>
+                                <p class="site">Check out this great <a href="https://www.behance.net/Bridgetech">https://www.behance.net/Bridgetech</a>  Freddom-Responsive Multi-Purpose March 06 2014</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Copyright &copy; All Rights Reserved. <a href="https://www.bridgetech-ma.com.com">Bridgetech-ma.com.com</a> - <a href="mailto:goh.h.com@gmail.com">Goh.h.com@gmail.com</a></p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="#header">Home</a></li>
+                                    <li><a href="#portfolio">Portfolios</a></li>
+                                    <li><a href="#fotos">Blog</a></li>
+                                    <li><a href="#footer">Contact</a></li>
+                                    <li><a href="#features">Shop</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+    </div>
+</body>
+</html>
