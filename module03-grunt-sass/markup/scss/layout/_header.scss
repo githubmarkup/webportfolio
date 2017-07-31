@@ -1,0 +1,275 @@
+header {
+	position: relative;
+	padding: 25px 0;
+
+	@include media('>=desktop') {
+		padding: 0;
+	}
+		
+	.container {
+		max-width: 1440px;
+		padding: 0 15px;
+	}
+}
+
+.logo {
+	float: left;
+
+	@include media('>=tablet') {
+		display: inline-block;
+	    vertical-align: middle;
+	    margin: -25px 20px 0 0;
+	    padding: 34px 15px 36px 0;
+	    border-right: 1px solid #e1e8ee;
+	}
+
+	@include media('>=desktop') {
+		margin: 0 20px 0 0;
+	}
+
+	img {
+		display: block;
+		width: 100%;
+	}
+}
+
+.slide-nav {
+	@include animate(max-height opacity);
+
+	max-height: 0;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	z-index: 9999;
+	background-color: #eee;
+	opacity: 0;
+
+	@include media('>=tablet') {
+		position: static;
+		max-height: inherit;
+		background-color: transparent;
+		opacity: 1;
+	}
+	
+	.nav-active & {
+		max-height: 4000px;
+		opacity: 1;
+	}
+}
+
+.menu {
+	@extend %clearfix;
+	
+	position: relative;
+	margin: 0 0 20px;
+
+	@include media('>=tablet') {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0;
+	}
+}
+
+#nav {
+	@include animate(transform);
+	@extend %listreset;
+
+	transform: translateY(-100%);
+
+	@include media('>=tablet') {
+		transform: translateY(0);
+		max-width: 450px;
+	}
+
+	@include media('>=desktop') {
+		float: left;
+		margin: 18px 0;
+	}
+
+	.nav-active & {
+		transform: translateY(0);
+	}
+
+	li {
+		@include animate(background-color);
+		
+		background-color: transparent;
+
+		@include media('>=tablet') {
+			display: inline-block;
+		}
+
+		&:hover {
+			background-color: #999;
+
+			@include media('>=tablet') {
+				background-color: transparent;
+			}
+		}
+
+		&.active {
+			
+			a {
+				color: #484848;
+			}
+		}
+
+		a {
+			@include animate(color);
+
+			display: block;
+			padding: 10px;
+			font-family: $base-font-sans-serif;
+			font-size: 14px;
+			color: $gray;
+			font-weight: 500;
+			text-decoration: none;
+
+			@include media('>=desktop') {
+				font-size: 18px;
+				line-height: 35px;
+			}
+
+			&:hover {
+				color: #484848;
+			}
+		}
+	}
+}
+
+.nav-opener {
+	float: right;
+	width: 40px;
+	height: 40px;
+	background:$black;
+	background: rgba($black, .5);
+	position: relative;
+	border-radius: 3px;
+	
+	@include media('>=tablet') {
+		display: none;
+	}
+
+	&:hover {
+		opacity: .9;
+	}
+
+	.nav-active & {
+		span {
+			opacity: 0;
+		}
+
+		&:before,
+		&:after {
+			transform:rotate(45deg);
+			top: 50%;
+			left: 15%;
+			right: 15%;
+		}
+
+		&:after {
+			transform:rotate(-45deg);
+		}
+	}
+
+	span,
+	&:before,
+	&:after {
+		background: $white;
+		border-radius: 4px;
+		position: absolute;
+		top: 50%;
+		left: 25%;
+		right: 25%;
+		height: 4px;
+		margin-top: -2px;
+		transition: all .3s linear;
+	}
+
+	&:before,
+	&:after {
+		content: '';
+		top: 30%;
+	}
+
+	&:after {
+		top: 70%;
+	}
+}
+
+.form-header {
+	max-width: 343px;
+	margin: 0 auto;
+	text-align: center;
+
+	@include media('>=tablet') {
+		display: inline-block;
+		vertical-align: middle;
+		max-width: 218px;
+    	margin: 0 0 auto 33px;    
+	}
+
+	@include media('>=desktop') {
+		float: right;
+		margin: 25px 0 25px 33px;
+		max-width: 343px;    
+	}
+}
+
+.input-group {
+	position: relative;
+	display: table;
+	border-collapse: separate;
+
+	.form-control{
+		@include placeholder {
+			color: $gray;
+		}
+
+		display: table-cell;
+		vertical-align: middle;
+		height: 42px;
+		width: 100%;
+		padding: 6px 12px;
+		border: 2px solid #e1e8ee;
+		border-radius: 4px;
+		color: $gray;
+		outline: none;
+		box-shadow: none;
+
+		&:focus {
+			border: 2px solid #e1e8ee;
+		}
+
+		&::-ms-clear {
+			display: none;
+		}
+	}
+}
+
+.input-group-btn {
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	width: 1%;
+
+	.btn {
+		@include animate(background-color);
+
+		padding: 12px 15px;
+	    outline: none;
+	    border: none;
+	    border-radius: 0 4px 4px 0;
+	    margin: 0 0 0 -4px;
+	    font-size: 18px;
+	    line-height: 18px;
+	    color: #fff;
+	    background-color: $gray;
+
+	    &:hover {
+			background-color: $dark-gray;
+	    }
+	}
+}	
